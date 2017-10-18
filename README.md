@@ -15,6 +15,35 @@ for (var i = 0; i < e.instances.length; i++) {
  
 //InstanceCache.prototype.writeDirtyInstancesToState
 
+GET ANY SIDEKICK SCRIPT
+var _r1 = new RegExp("_maturity");
+var _r2 = new RegExp("_zodiac_bonus");
+var _r3 = new RegExp("_xp");
+var _r5 = new RegExp("Item");
+var _r4 = new RegExp("NC04"); //sidekick you want to change
+for(var i in e){
+    if(_r4.test(e[i].schemaPrimativeID)){
+        if (_r5.test(e[i].schemaPrimativeType)) {
+            e[i].schemaPrimativeID="sidekick:WC08"; //to sidekick you want
+        }
+        if (_r1.test(e[i].schemaPrimativeID)) {
+            e[i].maximum=3;
+            e[i].value=3;
+        }
+        if (_r2.test(e[i].schemaPrimativeID)) {
+            e[i].maximum=2;
+            e[i].value=2;
+        }
+        if (_r3.test(e[i].schemaPrimativeID)) {
+            e[i].maximum=200000;
+            e[i].value=200000;
+        }
+    }
+}
+
+search : Query.porotype.run
+
+
 .	BẮN CHO ĐỦ 1000 TIỀN VÀNG ĐỂ MUA NHÂN VẬT FIONA. Để nguyên màn hình ở chỗ nhân vật FIONA này
 2.	MUA XONG, CHUỘT PHẢI -> CHỌN INSPECT
 3.	CHỌN TAB CONSOLE
