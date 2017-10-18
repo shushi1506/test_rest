@@ -268,6 +268,40 @@ var r = 87;
 for (var c = 0; c < r; c++) {
   GC.app.mvc.sendNotification("PlayGachaCommand", { type: "legendary", isFree: true});
 }
+var count = e.instances.length - 5;
+ 
+e.instances[count++].modelID = "Item:sidekick:FC38";
+e.instances[count++].modelID = "Item:sidekick:LC38";
+e.instances[count++].modelID = "Item:sidekick:NC38";
+e.instances[count++].modelID = "Item:sidekick:SC38";
+e.instances[count++].modelID = "Item:sidekick:WC38";
+ 
+//Max Sidekick
+for (var i = e.instances.length - 6;
+    i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 125800;
+    e.instances[i].stats.maturity = 3;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+ 
+ 
+var _r1 = new RegExp("Item:sidekick");
+for ( var i = 0; i < e.instances.length; i++) {
+if ( _r1.test(e.instances[i].modelID)) {
+e.instances[i].state = "idle";
+}
+}
+ 
+ 
+ 
+//InstanceCache.prototype.writeDirtyInstancesToState
+ 
+-FC38: Zio, Zoca, Ziocatel
+-NC38: Soch, Sopill, Sochipilly
+-WC38: Tal: Tala: Talok
+-SC38: Mici, Misit, Micticas
+-LC38: Ton, Tohna, Tohnati
+
 
 .	BẮN CHO ĐỦ 1000 TIỀN VÀNG ĐỂ MUA NHÂN VẬT FIONA. Để nguyên màn hình ở chỗ nhân vật FIONA này
 2.	MUA XONG, CHUỘT PHẢI -> CHỌN INSPECT
