@@ -42,7 +42,232 @@ for(var i in e){
 }
 
 search : Query.porotype.run
-
+//Break point
+InstanceCache.prototype.writeDirtyInstancesToState
+ 
+//all sidekicks
+var count = e.instances.length - 189; // x = 63 - 126 - 189
+//Stage 1
+e.instances[count++].modelID = "Item:sidekick:FC00"; //start of FC
+e.instances[count++].modelID = "Item:sidekick:FC01";
+e.instances[count++].modelID = "Item:sidekick:FC02";
+e.instances[count++].modelID = "Item:sidekick:FC04";
+e.instances[count++].modelID = "Item:sidekick:FC05";
+e.instances[count++].modelID = "Item:sidekick:FC06";
+e.instances[count++].modelID = "Item:sidekick:FC07";
+e.instances[count++].modelID = "Item:sidekick:FC08";
+e.instances[count++].modelID = "Item:sidekick:FC09";
+e.instances[count++].modelID = "Item:sidekick:FC10";
+e.instances[count++].modelID = "Item:sidekick:FC11";
+e.instances[count++].modelID = "Item:sidekick:FC12";
+e.instances[count++].modelID = "Item:sidekick:FC13";
+e.instances[count++].modelID = "Item:sidekick:FC22";
+e.instances[count++].modelID = "Item:sidekick:FC23";
+e.instances[count++].modelID = "Item:sidekick:LC00"; //start of LC
+e.instances[count++].modelID = "Item:sidekick:LC01";
+e.instances[count++].modelID = "Item:sidekick:LC03";
+e.instances[count++].modelID = "Item:sidekick:LC05";
+e.instances[count++].modelID = "Item:sidekick:LC06";
+e.instances[count++].modelID = "Item:sidekick:LC08";
+e.instances[count++].modelID = "Item:sidekick:LC09";
+e.instances[count++].modelID = "Item:sidekick:LC10";
+e.instances[count++].modelID = "Item:sidekick:LC22";
+e.instances[count++].modelID = "Item:sidekick:LC23";
+e.instances[count++].modelID = "Item:sidekick:NC00"; //start of NC
+e.instances[count++].modelID = "Item:sidekick:NC01";
+e.instances[count++].modelID = "Item:sidekick:NC02";
+e.instances[count++].modelID = "Item:sidekick:NC03";
+e.instances[count++].modelID = "Item:sidekick:NC04";
+e.instances[count++].modelID = "Item:sidekick:NC05";
+e.instances[count++].modelID = "Item:sidekick:NC07";
+e.instances[count++].modelID = "Item:sidekick:NC08";
+e.instances[count++].modelID = "Item:sidekick:NC09";
+e.instances[count++].modelID = "Item:sidekick:NC10";
+e.instances[count++].modelID = "Item:sidekick:NC22";
+e.instances[count++].modelID = "Item:sidekick:NC23";
+e.instances[count++].modelID = "Item:sidekick:SC00"; //start of SC
+e.instances[count++].modelID = "Item:sidekick:SC01";
+e.instances[count++].modelID = "Item:sidekick:SC02";
+e.instances[count++].modelID = "Item:sidekick:SC03";
+e.instances[count++].modelID = "Item:sidekick:SC04";
+e.instances[count++].modelID = "Item:sidekick:SC05";
+e.instances[count++].modelID = "Item:sidekick:SC06";
+e.instances[count++].modelID = "Item:sidekick:SC08";
+e.instances[count++].modelID = "Item:sidekick:SC09";
+e.instances[count++].modelID = "Item:sidekick:SC10";
+e.instances[count++].modelID = "Item:sidekick:SC11";
+e.instances[count++].modelID = "Item:sidekick:SC22";
+e.instances[count++].modelID = "Item:sidekick:SC23";
+e.instances[count++].modelID = "Item:sidekick:WC00"; //start of WC
+e.instances[count++].modelID = "Item:sidekick:WC01";
+e.instances[count++].modelID = "Item:sidekick:WC02";
+e.instances[count++].modelID = "Item:sidekick:WC04";
+e.instances[count++].modelID = "Item:sidekick:WC05";
+e.instances[count++].modelID = "Item:sidekick:WC06";
+e.instances[count++].modelID = "Item:sidekick:WC08";
+e.instances[count++].modelID = "Item:sidekick:WC11";
+e.instances[count++].modelID = "Item:sidekick:WC13";
+e.instances[count++].modelID = "Item:sidekick:WC14";
+e.instances[count++].modelID = "Item:sidekick:WC22";
+e.instances[count++].modelID = "Item:sidekick:WC23";
+e.instances[count++].modelID = "Item:sidekick:PC22"; //start of PC
+//stage 2
+e.instances[count++].modelID = "Item:sidekick:FC00"; //start of FC
+e.instances[count++].modelID = "Item:sidekick:FC01";
+e.instances[count++].modelID = "Item:sidekick:FC02";
+e.instances[count++].modelID = "Item:sidekick:FC04";
+e.instances[count++].modelID = "Item:sidekick:FC05";
+e.instances[count++].modelID = "Item:sidekick:FC06";
+e.instances[count++].modelID = "Item:sidekick:FC07";
+e.instances[count++].modelID = "Item:sidekick:FC08";
+e.instances[count++].modelID = "Item:sidekick:FC09";
+e.instances[count++].modelID = "Item:sidekick:FC10";
+e.instances[count++].modelID = "Item:sidekick:FC11";
+e.instances[count++].modelID = "Item:sidekick:FC12";
+e.instances[count++].modelID = "Item:sidekick:FC13";
+e.instances[count++].modelID = "Item:sidekick:FC22";
+e.instances[count++].modelID = "Item:sidekick:FC23";
+e.instances[count++].modelID = "Item:sidekick:LC00"; //start of LC
+e.instances[count++].modelID = "Item:sidekick:LC01";
+e.instances[count++].modelID = "Item:sidekick:LC03";
+e.instances[count++].modelID = "Item:sidekick:LC05";
+e.instances[count++].modelID = "Item:sidekick:LC06";
+e.instances[count++].modelID = "Item:sidekick:LC08";
+e.instances[count++].modelID = "Item:sidekick:LC09";
+e.instances[count++].modelID = "Item:sidekick:LC10";
+e.instances[count++].modelID = "Item:sidekick:LC22";
+e.instances[count++].modelID = "Item:sidekick:LC23";
+e.instances[count++].modelID = "Item:sidekick:NC00"; //start of NC
+e.instances[count++].modelID = "Item:sidekick:NC01";
+e.instances[count++].modelID = "Item:sidekick:NC02";
+e.instances[count++].modelID = "Item:sidekick:NC03";
+e.instances[count++].modelID = "Item:sidekick:NC04";
+e.instances[count++].modelID = "Item:sidekick:NC05";
+e.instances[count++].modelID = "Item:sidekick:NC07";
+e.instances[count++].modelID = "Item:sidekick:NC08";
+e.instances[count++].modelID = "Item:sidekick:NC09";
+e.instances[count++].modelID = "Item:sidekick:NC10";
+e.instances[count++].modelID = "Item:sidekick:NC22";
+e.instances[count++].modelID = "Item:sidekick:NC23";
+e.instances[count++].modelID = "Item:sidekick:SC00"; //start of SC
+e.instances[count++].modelID = "Item:sidekick:SC01";
+e.instances[count++].modelID = "Item:sidekick:SC02";
+e.instances[count++].modelID = "Item:sidekick:SC03";
+e.instances[count++].modelID = "Item:sidekick:SC04";
+e.instances[count++].modelID = "Item:sidekick:SC05";
+e.instances[count++].modelID = "Item:sidekick:SC06";
+e.instances[count++].modelID = "Item:sidekick:SC08";
+e.instances[count++].modelID = "Item:sidekick:SC09";
+e.instances[count++].modelID = "Item:sidekick:SC10";
+e.instances[count++].modelID = "Item:sidekick:SC11";
+e.instances[count++].modelID = "Item:sidekick:SC22";
+e.instances[count++].modelID = "Item:sidekick:SC23";
+e.instances[count++].modelID = "Item:sidekick:WC00"; //start of WC
+e.instances[count++].modelID = "Item:sidekick:WC01";
+e.instances[count++].modelID = "Item:sidekick:WC02";
+e.instances[count++].modelID = "Item:sidekick:WC04";
+e.instances[count++].modelID = "Item:sidekick:WC05";
+e.instances[count++].modelID = "Item:sidekick:WC06";
+e.instances[count++].modelID = "Item:sidekick:WC08";
+e.instances[count++].modelID = "Item:sidekick:WC11";
+e.instances[count++].modelID = "Item:sidekick:WC13";
+e.instances[count++].modelID = "Item:sidekick:WC14";
+e.instances[count++].modelID = "Item:sidekick:WC22";
+e.instances[count++].modelID = "Item:sidekick:WC23";
+e.instances[count++].modelID = "Item:sidekick:PC22"; //start of PC
+//stage 3
+e.instances[count++].modelID = "Item:sidekick:FC00"; //start of FC
+e.instances[count++].modelID = "Item:sidekick:FC01";
+e.instances[count++].modelID = "Item:sidekick:FC02";
+e.instances[count++].modelID = "Item:sidekick:FC04";
+e.instances[count++].modelID = "Item:sidekick:FC05";
+e.instances[count++].modelID = "Item:sidekick:FC06";
+e.instances[count++].modelID = "Item:sidekick:FC07";
+e.instances[count++].modelID = "Item:sidekick:FC08";
+e.instances[count++].modelID = "Item:sidekick:FC09";
+e.instances[count++].modelID = "Item:sidekick:FC10";
+e.instances[count++].modelID = "Item:sidekick:FC11";
+e.instances[count++].modelID = "Item:sidekick:FC12";
+e.instances[count++].modelID = "Item:sidekick:FC13";
+e.instances[count++].modelID = "Item:sidekick:FC22";
+e.instances[count++].modelID = "Item:sidekick:FC23";
+e.instances[count++].modelID = "Item:sidekick:LC00"; //start of LC
+e.instances[count++].modelID = "Item:sidekick:LC01";
+e.instances[count++].modelID = "Item:sidekick:LC03";
+e.instances[count++].modelID = "Item:sidekick:LC05";
+e.instances[count++].modelID = "Item:sidekick:LC06";
+e.instances[count++].modelID = "Item:sidekick:LC08";
+e.instances[count++].modelID = "Item:sidekick:LC09";
+e.instances[count++].modelID = "Item:sidekick:LC10";
+e.instances[count++].modelID = "Item:sidekick:LC22";
+e.instances[count++].modelID = "Item:sidekick:LC23";
+e.instances[count++].modelID = "Item:sidekick:NC00"; //start of NC
+e.instances[count++].modelID = "Item:sidekick:NC01";
+e.instances[count++].modelID = "Item:sidekick:NC02";
+e.instances[count++].modelID = "Item:sidekick:NC03";
+e.instances[count++].modelID = "Item:sidekick:NC04";
+e.instances[count++].modelID = "Item:sidekick:NC05";
+e.instances[count++].modelID = "Item:sidekick:NC07";
+e.instances[count++].modelID = "Item:sidekick:NC08";
+e.instances[count++].modelID = "Item:sidekick:NC09";
+e.instances[count++].modelID = "Item:sidekick:NC10";
+e.instances[count++].modelID = "Item:sidekick:NC22";
+e.instances[count++].modelID = "Item:sidekick:NC23";
+e.instances[count++].modelID = "Item:sidekick:SC00"; //start of SC
+e.instances[count++].modelID = "Item:sidekick:SC01";
+e.instances[count++].modelID = "Item:sidekick:SC02";
+e.instances[count++].modelID = "Item:sidekick:SC03";
+e.instances[count++].modelID = "Item:sidekick:SC04";
+e.instances[count++].modelID = "Item:sidekick:SC05";
+e.instances[count++].modelID = "Item:sidekick:SC06";
+e.instances[count++].modelID = "Item:sidekick:SC08";
+e.instances[count++].modelID = "Item:sidekick:SC09";
+e.instances[count++].modelID = "Item:sidekick:SC10";
+e.instances[count++].modelID = "Item:sidekick:SC11";
+e.instances[count++].modelID = "Item:sidekick:SC22";
+e.instances[count++].modelID = "Item:sidekick:SC23";
+e.instances[count++].modelID = "Item:sidekick:WC00"; //start of WC
+e.instances[count++].modelID = "Item:sidekick:WC01";
+e.instances[count++].modelID = "Item:sidekick:WC02";
+e.instances[count++].modelID = "Item:sidekick:WC04";
+e.instances[count++].modelID = "Item:sidekick:WC05";
+e.instances[count++].modelID = "Item:sidekick:WC06";
+e.instances[count++].modelID = "Item:sidekick:WC08";
+e.instances[count++].modelID = "Item:sidekick:WC11";
+e.instances[count++].modelID = "Item:sidekick:WC13";
+e.instances[count++].modelID = "Item:sidekick:WC14";
+e.instances[count++].modelID = "Item:sidekick:WC22";
+e.instances[count++].modelID = "Item:sidekick:WC23";
+e.instances[count++].modelID = "Item:sidekick:PC22"; //start of PC
+//63 lines of sidekick's above per section ^
+ 
+//setting level of the Sidekicks
+ 
+for (var i = e.instances.length - 189; i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 125800;
+    e.instances[i].stats.maturity = 3;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+for (var i = e.instances.length - 126; i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 62800;
+    e.instances[i].stats.maturity = 2;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+for (var i = e.instances.length - 63; i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 21400;
+    e.instances[i].stats.maturity = 1;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+ 
+//buying 100 at once
+ 
+//point
+GachaCellView.prototype.onCellClicked
+//script
+var r = 87;
+for (var c = 0; c < r; c++) {
+  GC.app.mvc.sendNotification("PlayGachaCommand", { type: "legendary", isFree: true});
+}
 
 .	BẮN CHO ĐỦ 1000 TIỀN VÀNG ĐỂ MUA NHÂN VẬT FIONA. Để nguyên màn hình ở chỗ nhân vật FIONA này
 2.	MUA XONG, CHUỘT PHẢI -> CHỌN INSPECT
