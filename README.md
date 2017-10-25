@@ -12,9 +12,9 @@ for (var i = 0; i < e.instances.length; i++) {
     }
 }
  
- 
-//InstanceCache.prototype.writeDirtyInstancesToState
 
+//InstanceCache.prototype.writeDirtyInstancesToState
+ ******************************
 GET ANY SIDEKICK SCRIPT
 var _r1 = new RegExp("_maturity");
 var _r2 = new RegExp("_zodiac_bonus");
@@ -42,6 +42,7 @@ for(var i in e){
 }
 
 search : Query.porotype.run
+*********************************************
 //Break point
 InstanceCache.prototype.writeDirtyInstancesToState
  
@@ -275,7 +276,7 @@ e.instances[count++].modelID = "Item:sidekick:LC38";
 e.instances[count++].modelID = "Item:sidekick:NC38";
 e.instances[count++].modelID = "Item:sidekick:SC38";
 e.instances[count++].modelID = "Item:sidekick:WC38";
- 
+*********************************************************************** 
 //Max Sidekick
 for (var i = e.instances.length - 6;
     i < e.instances.length; i++) {
@@ -302,7 +303,7 @@ e.instances[i].state = "idle";
 -SC38: Mici, Misit, Micticas
 -LC38: Ton, Tohna, Tohnati
 
-
+***********************************************************************
 .	BẮN CHO ĐỦ 1000 TIỀN VÀNG ĐỂ MUA NHÂN VẬT FIONA. Để nguyên màn hình ở chỗ nhân vật FIONA này
 2.	MUA XONG, CHUỘT PHẢI -> CHỌN INSPECT
 3.	CHỌN TAB CONSOLE
@@ -405,3 +406,56 @@ this.bossRaidDamage = 999999999
 vào rồi ENTER
 26.	Bấm sang tab SOURCES, Click vào hàng số thứ tự ở bên trái dòng this.magnetTimer.step(e)
 27.	Bấm RESUME SCRIPT EXECUTION ở trên cùng bên trái khung soạn thảo code. Cho nhân vật đâm đầu vào quả lửa màu đỏ để chết là xong. Khi out ra sẽ thấy BOSS đã được KILL. TẬN HƯỞNG NHÉ!
+********************************
+//sidekick halloween
+var count = e.instances.length - 18;
+ 
+e.instances[count++].modelID = "Item:sidekick:SC29";
+e.instances[count++].modelID = "Item:sidekick:SC28";
+e.instances[count++].modelID = "Item:sidekick:FC28";
+e.instances[count++].modelID = "Item:sidekick:WC28";
+e.instances[count++].modelID = "Item:sidekick:NC28";
+e.instances[count++].modelID = "Item:sidekick:LC28";
+ 
+e.instances[count++].modelID = "Item:sidekick:SC29";
+e.instances[count++].modelID = "Item:sidekick:SC28";
+e.instances[count++].modelID = "Item:sidekick:FC28";
+e.instances[count++].modelID = "Item:sidekick:WC28";
+e.instances[count++].modelID = "Item:sidekick:NC28";
+e.instances[count++].modelID = "Item:sidekick:LC28";
+ 
+e.instances[count++].modelID = "Item:sidekick:SC29";
+e.instances[count++].modelID = "Item:sidekick:SC28";
+e.instances[count++].modelID = "Item:sidekick:FC28";
+e.instances[count++].modelID = "Item:sidekick:WC28";
+e.instances[count++].modelID = "Item:sidekick:NC28";
+e.instances[count++].modelID = "Item:sidekick:LC28";
+ 
+ 
+for (var i = e.instances.length - 18;
+    i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 125800;
+    e.instances[i].stats.maturity = 3;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+ 
+for (var i = e.instances.length - 18;
+    i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 125800;
+    e.instances[i].stats.maturity = 3;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+ 
+for (var i = e.instances.length - 18;
+    i < e.instances.length; i++) {
+    e.instances[i].stats.xp = 125800;
+    e.instances[i].stats.maturity = 3;
+    e.instances[i].stats.zodiacBonus = 2;
+}
+ 
+var _r1 = new RegExp("Item:sidekick");
+for ( var i = 0; i < e.instances.length; i++) {
+if ( _r1.test(e.instances[i].modelID)) {
+e.instances[i].state = "idle";
+}
+}
