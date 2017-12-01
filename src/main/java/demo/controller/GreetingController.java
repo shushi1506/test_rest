@@ -3,6 +3,7 @@ package demo.controller;
 import demo.core.mysql.crud.TableChuContent;
 
 import demo.entity.ChuContentEntity;
+import demo.entity.ChuContentTitleEntity;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,4 +38,10 @@ public class GreetingController {
         TableChuContent tableChuContent=new TableChuContent();
         return tableChuContent.getTableChuContentById(start, end);
     }
+    @GetMapping(value = "/chucontent/title",produces = {MediaType.APPLICATION_JSON_VALUE},headers = {"Accept=application/json"})
+    public List<ChuContentTitleEntity>getChuContentTitle(){
+        TableChuContent tableChuContent=new TableChuContent();
+       return tableChuContent.getTitleChuContent();
+    }
+
 }

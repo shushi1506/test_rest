@@ -6,11 +6,13 @@
     <session-factory>
         <property name="connection.url">jdbc:mysql://localhost:3306/chundbcntt?zeroDateTimeBehavior=convertToNull</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-         <property name="connection.username">root</property>
-         <property name="connection.password">123456</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
         <property name="hibernate.show_sql">true</property>
         <mapping class="demo.entity.ChuContentEntity"/>
         <mapping class="demo.entity.ChuCategoriesEntity"/>
+        <mapping class="demo.entity.ChuContentTitleEntity"/>
+        <mapping class="demo.entity.ChuContentIntroNewFeed"/>
 
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
