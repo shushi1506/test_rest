@@ -1,40 +1,74 @@
 package demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
+@JsonAutoDetect
 @Entity
 @Table(name = "chu_content", schema = "chundbcntt")
 public class ChuContentEntity {
+    @JsonProperty("id")
     private int id;
+    @JsonProperty("title")
     private String title;
+    @JsonProperty("alias")
     private String alias;
+    @JsonProperty("titleAlias")
     private String titleAlias;
+    @JsonProperty("introtext")
     private String introtext;
-    private String fulltext;
+    @JsonProperty("fulltext1")
+    private String fulltext1;
+    @JsonProperty("state")
     private byte state;
+    @JsonProperty("sectionid")
     private int sectionid;
+    @JsonProperty("mask")
     private int mask;
+    @JsonProperty("catid")
     private int catid;
+    @JsonProperty("created")
     private Timestamp created;
+    @JsonProperty("createdBy")
     private int createdBy;
+    @JsonProperty("createdByAlias")
     private String createdByAlias;
+    @JsonProperty("modified")
     private Timestamp modified;
+    @JsonProperty("modifiedBy")
     private int modifiedBy;
+    @JsonProperty("checkedOut")
     private int checkedOut;
+    @JsonProperty("checkedOutTime")
     private Timestamp checkedOutTime;
+    @JsonProperty("publishUp")
     private Timestamp publishUp;
+    @JsonProperty("publishDown")
     private Timestamp publishDown;
+    @JsonProperty("images")
     private String images;
+    @JsonProperty("urls")
     private String urls;
+    @JsonProperty("attribs")
     private String attribs;
+    @JsonProperty("version")
     private int version;
+    @JsonProperty("parentid")
     private int parentid;
+    @JsonProperty("ordering")
     private int ordering;
+    @JsonProperty("metakey")
     private String metakey;
+    @JsonProperty("metadesc")
     private String metadesc;
+    @JsonProperty("access")
     private int access;
+    @JsonProperty("hits")
     private int hits;
+    @JsonProperty("metadata")
     private String metadata;
 
     @Id
@@ -88,13 +122,13 @@ public class ChuContentEntity {
     }
 
     @Basic
-    @Column(name = "fulltext", nullable = false, length = -1)
+    @Column(name = "fulltext1", nullable = false, length = -1)
     public String getFulltext() {
-        return fulltext;
+        return fulltext1;
     }
 
     public void setFulltext(String fulltext) {
-        this.fulltext = fulltext;
+        this.fulltext1 = fulltext;
     }
 
     @Basic
@@ -361,7 +395,7 @@ public class ChuContentEntity {
         if (alias != null ? !alias.equals(that.alias) : that.alias != null) return false;
         if (titleAlias != null ? !titleAlias.equals(that.titleAlias) : that.titleAlias != null) return false;
         if (introtext != null ? !introtext.equals(that.introtext) : that.introtext != null) return false;
-        if (fulltext != null ? !fulltext.equals(that.fulltext) : that.fulltext != null) return false;
+        if (fulltext1 != null ? !fulltext1.equals(that.fulltext1) : that.fulltext1 != null) return false;
         if (created != null ? !created.equals(that.created) : that.created != null) return false;
         if (createdByAlias != null ? !createdByAlias.equals(that.createdByAlias) : that.createdByAlias != null)
             return false;
@@ -387,7 +421,7 @@ public class ChuContentEntity {
         result = 31 * result + (alias != null ? alias.hashCode() : 0);
         result = 31 * result + (titleAlias != null ? titleAlias.hashCode() : 0);
         result = 31 * result + (introtext != null ? introtext.hashCode() : 0);
-        result = 31 * result + (fulltext != null ? fulltext.hashCode() : 0);
+        result = 31 * result + (fulltext1 != null ? fulltext1.hashCode() : 0);
         result = 31 * result + (int) state;
         result = 31 * result + sectionid;
         result = 31 * result + mask;

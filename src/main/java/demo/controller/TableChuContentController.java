@@ -13,6 +13,11 @@ import java.util.List;
 @RestController
 public class TableChuContentController {
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "/newfeed/{id}",produces={MediaType.APPLICATION_JSON_VALUE},headers = "Accept=application/json")
     public List<ChuContentEntity> getChuContentById(@PathVariable("id") int id)  {
         TableChuContent tableChuContent=new TableChuContent();
@@ -38,6 +43,12 @@ public class TableChuContentController {
         TableChuContent tableChuContent=new TableChuContent();
         return tableChuContent.getTitleChuContent();
     }
+
+    /**
+     *
+     * @param chuContentEntity
+     * @return
+     */
     @PostMapping(value = "/newfeed/chucontent/")
     public ResponeCreateChuContent createChuContent(@RequestBody ChuContentEntity chuContentEntity){
         TableChuContent tableChuContent=new TableChuContent();
