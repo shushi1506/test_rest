@@ -10,11 +10,14 @@ import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
 import com.sun.jersey.api.json.JSONConfiguration;
 import demo.entity.ChuContentEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+
 import java.io.IOException;
-import java.util.Iterator;
+
 import java.util.List;
 
 /**
@@ -25,7 +28,18 @@ import java.util.List;
 public class jsonToObject {
     public static void main(String[] args) throws IOException {
 
-
+//        Client client=Client.create();
+//        WebResource webResource=client.resource("http://localhost:8888/newfeed/chuid").queryParam("start","69").queryParam("end","72");
+//        List<ChuContentEntity> response=webResource.accept("application/json").type("application/json").get(new GenericType<List<ChuContentEntity>>(){});
+//        System.out.println(response.size());
+        RestTemplate restTemplate=new RestTemplate();
+        ResponseEntity<ChuContentEntity[]> responseEntity=restTemplate.getForEntity("http://localhost:8888/newfeed/chuid?start=69&end=72",ChuContentEntity[].class);
+        ChuContentEntity[] ob=responseEntity.getBody();
+        System.out.println(ob.length);
+        MediaType contentType = responseEntity.getHeaders().getContentType();
+        HttpStatus statusCode = responseEntity.getStatusCode();
+        System.out.println(contentType.getType()+"  "+ contentType.getQualityValue());
+        System.out.println(statusCode.toString());
     }
     public void sendObjectToRestful(){
         ChuContentEntity chuContentEntity=new ChuContentEntity();
@@ -66,5 +80,16 @@ public class jsonToObject {
         List<ChuContentEntity> list=mapper.readValue(out,new TypeReference<List<ChuContentEntity>>(){});
         System.out.println(list.size());
         return list;
+    }
+    public ChuContentEntity[] getObjectJSONFromRestful_version2()  {
+        RestTemplate restTemplate=new RestTemplate();
+        ResponseEntity<ChuContentEntity[]> responseEntity=restTemplate.getForEntity("http://localhost:8888/newfeed/chuid?start=69&end=72",ChuContentEntity[].class);
+        ChuContentEntity[] ob=responseEntity.getBody();
+        System.out.println(ob.length);
+        MediaType contentType = responseEntity.getHeaders().getContentType();
+        HttpStatus statusCode = responseEntity.getStatusCode();
+        System.out.println(contentType.getType()+"  "+ contentType.getQualityValue());
+        System.out.println(statusCode.toString());
+        return ob;
     }
 }
